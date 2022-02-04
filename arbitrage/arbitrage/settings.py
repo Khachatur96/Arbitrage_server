@@ -83,8 +83,8 @@ WSGI_APPLICATION = 'arbitrage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'new_db',
-        'USER': 'newuser',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '',
