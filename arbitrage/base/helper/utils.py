@@ -3,7 +3,7 @@ from datetime import datetime, timezone, timedelta
 from .abis import *
 from ..models import Dex
 
-web3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/4b1db8d17da142f3861622b56cfdb3e7'))
+web3 = Web3(Web3.HTTPProvider('https://mainnet.infura.io/v3/ff14675822af46598f6b51d05b18d5fc'))
 
 
 # connects to smart_contract and gets pair price for given swap
@@ -53,6 +53,7 @@ def get_coins_pair_price(pair):
             except Exception as e:
                 pass
         result[dex.name] = float(response_result)
+
         # result['from_coin'] = from_price
     result['pair'] = pair[-3]
     return result

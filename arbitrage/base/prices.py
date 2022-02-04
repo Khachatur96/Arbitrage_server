@@ -31,6 +31,7 @@ def sort_pair_price_result():
         dictionary_with_final_info
     """
     prices_result = np.array(get_pairs_matrix())
+    print('///////////////',prices_result)
     DEX = Dex.objects.all()
     data_collector = []
 
