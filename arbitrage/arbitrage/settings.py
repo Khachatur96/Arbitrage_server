@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hqlm+7kvrrq24z*u+&wqol&*ewc1q^3hb@s(t&oc0b4d%6(bsn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['46.101.116.172']
 
@@ -83,13 +83,16 @@ WSGI_APPLICATION = 'arbitrage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_server',
-        'USER': 'serveruser',
+        'NAME': 'new_db',
+        'USER': 'newuser',
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '',
+
+
     }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -125,8 +128,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
 
 
 # Default primary key field type
