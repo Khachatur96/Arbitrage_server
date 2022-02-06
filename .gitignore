@@ -1,2 +1,6 @@
 venv/
 .idea/
+.env
+local_settings.py
+prod_settings.py
+__pycache__
